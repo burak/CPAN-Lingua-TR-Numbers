@@ -1,6 +1,6 @@
 use 5.006;
 use strict;
-use Module::Build;use strict;
+use Module::Build;
 use Module::Build;
 use File::Spec;
 use IO::File;
