@@ -329,7 +329,7 @@ Converts the supplied number into Turkish text.
 
 Similar to C<num2tr>, but returns ordinal versions .
 
-=head1 DEBUG
+=head2 DEBUG
 
 Define C<Lingua::TR::Numbers::DEBUG> to enable debugging.
 
