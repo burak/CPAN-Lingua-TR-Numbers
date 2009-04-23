@@ -7,7 +7,7 @@ use vars qw(@ISA $VERSION @EXPORT @EXPORT_OK %EXPORT_TAGS);
 #use constant IS_LEGACY => $] < 5.006;
 use Exporter ();
 
-BEGIN { *DEBUG = sub () {0} unless defined &DEBUG } # setup a DEBUG constant
+BEGIN { *DEBUG = sub () {0} if ! defined &DEBUG } # setup a DEBUG constant
 
 $VERSION     = '0.23';
 
@@ -328,6 +328,10 @@ Converts the supplied number into Turkish text.
 =head2 num2tr_ordinal
 
 Similar to C<num2tr>, but returns ordinal versions .
+
+=head1 DEBUG
+
+Define C<Lingua::TR::Numbers::DEBUG> to enable debugging.
 
 =head1 LIMIT
 
