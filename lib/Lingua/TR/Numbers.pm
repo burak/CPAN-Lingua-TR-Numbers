@@ -9,7 +9,7 @@ use Exporter ();
 
 BEGIN { *DEBUG = sub () {0} unless defined &DEBUG } # setup a DEBUG constant
 
-$VERSION     = '0.22';
+$VERSION     = '0.23';
 
 @ISA         = qw( Exporter              );
 @EXPORT_OK   = qw( num2tr num2tr_ordinal );
