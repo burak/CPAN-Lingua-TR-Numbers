@@ -27,7 +27,7 @@ Test::More is needed for running distro tests.
 
 COPYRIGHT
 
-Copyright (c) 2006-2008 Burak Gürsoy. All rights reserved.
+Copyright (c) 2006-2009 Burak Gürsoy. All rights reserved.
 
 This module is based on and includes modified code 
 portions of Sean M. Burke's Lingua::EN::Numbers.
@@ -37,5 +37,5 @@ Lingua::EN::Numbers is Copyright (c) 2005, Sean M. Burke.
 LICENSE
 
 This library is free software; you can redistribute it and/or modify 
-it under the same terms as Perl itself, either Perl version 5.8.8 or, 
+it under the same terms as Perl itself, either Perl version 5.10.1 or, 
 at your option, any later version of Perl 5 you may have available.
