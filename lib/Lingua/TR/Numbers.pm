@@ -26,6 +26,7 @@ use constant DIGITS       => 0..9;
 use constant TENS         => map { 10 * $_ } 1..9;
 use constant LAST_ELEMENT => -1;
 use constant PREV_ELEMENT => -2;
+use constant CHUNK_MAX    => 100;
 use base qw( Exporter );
 use Carp qw( croak );
 
@@ -202,7 +203,7 @@ sub _bigint2tr {
 
     my $and;
     # junk
-    $and = EMPTY_STRING if $chunks[LAST_ELEMENT][1] == 0 and  $chunks[LAST_ELEMENT][0] < 100;
+    $and = EMPTY_STRING if $chunks[LAST_ELEMENT][1] == 0 and $chunks[LAST_ELEMENT][0] < CHUNK_MAX;
     # The special 'and' that shows up in like "one thousand and eight"
     # and "two billion and fifteen", but not "one thousand [*and] five hundred"
     # or "one million, [*and] nine"
