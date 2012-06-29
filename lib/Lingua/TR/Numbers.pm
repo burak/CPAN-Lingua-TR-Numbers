@@ -361,23 +361,11 @@ values whenever possible.
 
 Currently, the module won't work with any Perl older than 5.6.
 
-=head1 AUTHOR
-
-Burak Gürsoy, E<lt>burakE<64>cpan.orgE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2006-2009 Burak Gürsoy. All rights reserved.
+=head1 ACKNOWLEDGEMENT
 
 This module is based on and includes modified code 
 portions from Sean M. Burke's Lingua::EN::Numbers.
 
 Lingua::EN::Numbers is Copyright (c) 2005, Sean M. Burke.
-
-=head1 LICENSE
-
-This library is free software; you can redistribute it and/or modify 
-it under the same terms as Perl itself, either Perl version 5.10.1 or, 
-at your option, any later version of Perl 5 you may have available.
 
 =cut
