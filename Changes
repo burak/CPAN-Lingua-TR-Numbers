@@ -1,6 +1,7 @@
 Revision history for Perl extension Lingua::TR::Numbers.
 
-Time zone is GMT+2.
+0.31 Sun Jul  8 01:50:04 2012
+    => Bump version.
 
 0.30 Tue Dec  1 04:29:00 2009
     => perlcritic refactoring.

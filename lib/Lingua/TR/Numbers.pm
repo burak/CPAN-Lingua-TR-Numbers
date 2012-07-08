@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use subs qw( _log );
 
-our $VERSION = '0.30';
+our $VERSION = '0.31';
 
 use constant RE_E2TR => qr{
     \A
