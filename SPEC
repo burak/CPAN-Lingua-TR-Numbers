@@ -3,7 +3,7 @@
     requires    => {},
     meta_merge  => {
         resources => {
-            repository => 'http://bitbucket.org/burak/cpan-lingua-tr-numbers/',
+            repository => 'http://github.com/burak/cpan-lingua-tr-numbers/',
         },
     },
     BUILDER => {
