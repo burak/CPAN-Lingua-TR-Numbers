@@ -1,9 +1,0 @@
-lib/Lingua/TR/Numbers.pm
-lib/Lingua/TR/NumbersTR.pod
-t/20_main_integers.t
-t/30_v1_tests.t
-Build.PL
-Changes
-MANIFEST
-README
-SPEC

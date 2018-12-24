@@ -1,11 +1,10 @@
 package Lingua::TR::Numbers;
-use 5.006;
+
+use 5.010;
 use utf8;
 use strict;
 use warnings;
 use subs qw( _log );
-
-our $VERSION = '0.32';
 
 use constant RE_E2TR => qr{
     \A
