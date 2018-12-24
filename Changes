@@ -1,6 +1,8 @@
 Revision history for Perl extension Lingua::TR::Numbers.
 
 {{$NEXT}}
+
+0.34 2018-12-25 BURAK
     - Migrate to dzil.
 
 0.32 Tue Jul  5 01:24:23 2016
