@@ -26,7 +26,7 @@ use constant TENS         => map { 10 * $_ } 1..9;
 use constant LAST_ELEMENT => -1;
 use constant PREV_ELEMENT => -2;
 use constant CHUNK_MAX    => 100;
-use base qw( Exporter );
+use parent qw( Exporter );
 use Carp qw( croak );
 
 BEGIN { *DEBUG = sub () {0} if ! defined &DEBUG } # setup a DEBUG constant
