@@ -236,7 +236,7 @@ sub _groupify {
     _log "  Groupifying $basic x $multnum mults\n" if DEBUG > 2;
 
     if ( $MULT{$multnum} ) {
-        return $raw == 1 ? $MULT{$multnum} : "$basic $MULT{$multnum}";
+        return $multnum == 1 && $raw == 1 ? $MULT{$multnum} : "$basic $MULT{$multnum}";
     }
     # Otherwise it must be huuuuuge, so fake it with scientific notation
     return $basic . ' çarpı on üzeri ' . num2tr( $raw * 3 );
