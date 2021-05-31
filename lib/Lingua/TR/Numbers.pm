@@ -29,7 +29,10 @@ use constant CHUNK_MAX    => 100;
 use parent qw( Exporter );
 use Carp qw( croak );
 
-BEGIN { *DEBUG = sub () {0} if ! defined &DEBUG } # setup a DEBUG constant
+BEGIN {
+    my $DEBUG = 0 + ( $ENV{DEBUG} || 0 );
+    *DEBUG = sub () { $DEBUG }
+}
 
 our @EXPORT_OK   = qw( num2tr num2tr_ordinal );
 our %EXPORT_TAGS =   ( all => \@EXPORT_OK    );
@@ -231,7 +234,10 @@ sub _groupify {
     my($basic, $multnum, $raw) = @_;
     return  $basic unless $multnum;  # the first group is unitless
     _log "  Groupifying $basic x $multnum mults\n" if DEBUG > 2;
-    return "$basic $MULT{$multnum}"  if  $MULT{$multnum};
+
+    if ( $MULT{$multnum} ) {
+        return $raw == 1 ? $MULT{$multnum} : "$basic $MULT{$multnum}";
+    }
     # Otherwise it must be huuuuuge, so fake it with scientific notation
     return $basic . ' çarpı on üzeri ' . num2tr( $raw * 3 );
 }
