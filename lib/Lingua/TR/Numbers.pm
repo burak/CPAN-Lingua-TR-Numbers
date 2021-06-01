@@ -4,7 +4,7 @@ use 5.010;
 use utf8;
 use strict;
 use warnings;
-use subs qw( _log );
+use subs qw( _log DEBUG );
 
 use constant RE_E2TR => qr{
     \A
