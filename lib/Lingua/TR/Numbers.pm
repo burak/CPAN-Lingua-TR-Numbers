@@ -296,17 +296,18 @@ Lingua::TR::Numbers - Converts numbers into Turkish text.
 
 =head1 SYNOPSIS
 
-   use Lingua::TR::Numbers qw(num2tr num2tr_ordinal);
-   
-   my $x = 234;
-   my $y = 54;
-   print "Bugün yapman gereken ", num2tr($x), " tane işin var!\n";
-   print "Yarın annemin ", num2tr_ordinal($y), " yaşgününü kutlayacağız.\n";
+    use open qw( :std :utf8 );
+    use Lingua::TR::Numbers qw(num2tr num2tr_ordinal);
+
+    my $x = 234;
+    my $y = 54;
+    printf "Bugün yapman gereken %s tane işin var!\n", num2tr($x);
+    printf "Yarın annemin %s yaş gününü kutlayacağız.\n", num2tr_ordinal($y);
 
 prints:
 
    Bugün yapman gereken iki yüz otuz dört tane işin var!
-   Yarın annemin elli dördüncü yaşgününü kutlayacağız.
+   Yarın annemin elli dördüncü yaş gününü kutlayacağız.
 
 =head1 DESCRIPTION
 

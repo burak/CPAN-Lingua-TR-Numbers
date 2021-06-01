@@ -10,12 +10,13 @@ Lingua::TR::Numbers - Sayıları Türkçe okunuşlarına çevirir.
 
 =head1 ÖZET
 
-   use Lingua::TR::Numbers qw(num2tr num2tr_ordinal);
-   
-   my $x = 234;
-   my $y = 54;
-   print "Bugün yapman gereken ", num2tr($x), " tane işin var!\n";
-   print "Yarın annemin ", num2tr_ordinal($y), " yaşgününü kutlayacağız.\n";
+    use open qw( :std :utf8 );
+    use Lingua::TR::Numbers qw(num2tr num2tr_ordinal);
+
+    my $x = 234;
+    my $y = 54;
+    printf "Bugün yapman gereken %s tane işin var!\n", num2tr($x);
+    printf "Yarın annemin %s yaş gününü kutlayacağız.\n", num2tr_ordinal($y);
 
 çıktısı:
 
