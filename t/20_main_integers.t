@@ -29,6 +29,7 @@ is num2tr( '0.1' ), 'sıfır nokta bir',   'num2tr';
 is num2tr(  '.1' ), 'nokta bir',         'num2tr';
 is num2tr(  '.01'), 'nokta sıfır bir',   'num2tr';
 is num2tr('4003' ), 'dört bin üç',       'num2tr';
+is num2tr('1168' ), 'bin yüz altmış sekiz', 'num2tr';
 
 _log "# TAMAM, bitti.\n";
 
